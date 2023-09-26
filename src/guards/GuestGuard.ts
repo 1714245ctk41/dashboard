@@ -1,3 +1,3 @@
 const GuestGuard = ({ children }) => {
-  const { isAuthenticated } = useAuth();
+  // const { isAuthenticated } = useAuth();
 };
