@@ -6,10 +6,16 @@ const htmlPlugin = new HtmlWebPackPlugin({
 
 module.exports = {
   mode: "development",
+  devServer: {
+    historyApiFallback: true,
+    static: path.join(__dirname, '../dist'),
+    port: 3000,
+    compress: true,
+  },
   module: {
     rules: [
       {
-        test: /\.tsx$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -22,7 +28,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".jsx", ".js"],
   },
   plugins: [htmlPlugin],
 };

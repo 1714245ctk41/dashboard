@@ -1,6 +1,5 @@
-type LoginType = {};
 
-const Login = ({}: LoginType) => {
+const Login = () => {
   return <h1>This is login page</h1>;
 };
 

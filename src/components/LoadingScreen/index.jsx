@@ -1,8 +1,7 @@
 import React, { memo } from "react";
 
-type LoadingScreenProps = {};
 
-const LoadingScreen = ({}: LoadingScreenProps) => {
+const LoadingScreen = ({}) => {
   return (
     <div className="lds-ellipsis">
       <div></div>

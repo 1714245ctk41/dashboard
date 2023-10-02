@@ -1,4 +1,4 @@
-export const path = ({ root, sublink }: pathProps) => {
+export const path = ({ root, sublink }) => {
   return `${root}${sublink}`;
 };
 
