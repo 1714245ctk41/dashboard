@@ -1,6 +1,6 @@
-import React from "react";
+type LoginType = {};
 
-const Login = () => {
+const Login = ({}: LoginType) => {
   return <h1>This is login page</h1>;
 };
 
