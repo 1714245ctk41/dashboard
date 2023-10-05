@@ -3,11 +3,7 @@ import { Navigate, useLocation } from "react-router-dom";
 import LoadingScreen from "../components/LoadingScreen";
 import Login from "../screens/Login";
 
-type AuthGuardProps = {
-  children: JSX.Element;
-};
-
-const AuthGuard = ({ children }: AuthGuardProps) => {
+const AuthGuard = ({ children }) => {
   const [requestedLocation, setRequestedLocation] = useState<string | null>(
     null
   );

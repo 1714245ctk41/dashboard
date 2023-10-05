@@ -1,0 +1,2 @@
+problems:
+- https://stackoverflow.com/questions/75632134/react-router-v6-createbrowserrouter-can-not-get-error
