@@ -1,12 +1,11 @@
-import { memo, useState } from "react";
-import { Navigate, useLocation } from "react-router-dom";
-import LoadingScreen from "../components/LoadingScreen";
-import Login from "../screens/Login";
+import { memo, useState } from 'react';
+import { Navigate, useLocation } from 'react-router-dom';
+import LoadingScreen from '../components/LoadingScreen';
+import Author from '../screens/Authori';
 
 const AuthGuard = ({ children }) => {
-  const [requestedLocation, setRequestedLocation] = useState<string | null>(
-    null
-  );
+  const [requestedLocation, setRequestedLocation] =
+    (useState < string) | (null > null);
   const { pathname } = useLocation();
   const { isAuthenticated, isInitialized } = {
     isAuthenticated: true,
@@ -21,7 +20,7 @@ const AuthGuard = ({ children }) => {
     if (pathname !== requestedLocation) {
       setRequestedLocation(pathname);
     }
-    return <Login />;
+    return <Author />;
   }
 
   if (requestedLocation && pathname !== requestedLocation) {
