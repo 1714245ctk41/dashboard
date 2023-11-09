@@ -12,9 +12,9 @@ const Loadable = (Component) => (props) => {
 };
 
 // Authentication
-const Register = Loadable(lazy(() => import("../screens/Register")));
+const Register = Loadable(lazy(() => import("../screens/Authori/Register")));
 const Dashboard = Loadable(lazy(() => import("../screens/Dashboard")));
-const Login = Loadable(lazy(() => import("../screens/Login")));
+const Login = Loadable(lazy(() => import("../screens/Authori/Login")));
 // Dashboard
 
 export const router = createBrowserRouter([
@@ -23,9 +23,12 @@ export const router = createBrowserRouter([
     element: <Dashboard />,
   },
   {
-    path: "/auth",
+    path: "/register",
     element: <Register />,
-    errorElement: <Login />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   }
 ]);
 
