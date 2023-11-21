@@ -1,0 +1,27 @@
+.aside{
+  height: 100vh;
+  background-color: white;
+  padding:0.75rem;
+
+}
+
+.icon-nasa-orange:before{
+  content:"\25",
+}
+
+.nasa-menu-item-icon {
+  width: 25px;
+  display: inline-block;
+  height: 20px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+
+@media (min-width: 992px) {
+  .aside{
+    width: 265px;
+  }
+}

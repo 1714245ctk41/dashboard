@@ -48,7 +48,7 @@ const TodoList = () => {
       }, 2000);
     }
   }, [contentAlert]);
-  console.log(title, 5321432, todos);
+  
   return (
     <div>
       {contentAlert && (
