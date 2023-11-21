@@ -12,13 +12,10 @@ library.add(fas)
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  console.log("hahah");
   return (
     <div className="App">
     <AppContext.Provider value={{state, dispatch}} >
-    <div className="container p-20">
       <RouterProvider router={router} />
-    </div>
     </AppContext.Provider>
   </div>
   )

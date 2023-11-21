@@ -6,14 +6,7 @@ export const fetchCustom = async ({input, init}) => {
   if (init?.authorization) {
     headers['Authorization'] = getLocalStorage('token');
   }
-  
-  console.log({
-    ...init,
-    headers: {
-      ...headers,
-      ...init?.headers,
-    },
-  }, 4234);
+
   const rs = await fetch(input, {
     ...init,
     headers: {

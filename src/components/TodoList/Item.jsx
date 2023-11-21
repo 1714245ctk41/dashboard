@@ -11,7 +11,7 @@ const Item = ({ id, todo, setContentAlert }) => {
   const [isDisabled, setIsDisabled] = useState(true);
   const [newTitle, setNewTitle] = useState();
   const [showDelete, setShowDelete] = useState(false);
-  console.log(todo, todos, id, newTitle, showDelete, 'todotodotodo');
+  
   const handleEdit = () => {
     isDisabled && setIsDisabled(false);
     if (!isDisabled && newTitle) {

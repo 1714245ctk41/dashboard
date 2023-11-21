@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'nasa-font'; 
+  src: 
+  url('../public/icons/nasa-font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^=icon-nasa-], [class*=" icon-nasa-"] {
+  font-family: nasa-font;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr!important;
+}
+
 .App {
   /* text-align: center; */
 }
@@ -24,16 +45,13 @@
   color: white;
 }
 
-.App-link {
+.app-link {
   color: #61dafb;
 }
 
-.container{
-  margin-top: 10%;
-  width: 600px;
-  background: #fafafa;
-  border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.container {
+  display: flex;
+  flex-direction: row;
 }
 
 @keyframes App-logo-spin {
@@ -45,58 +63,118 @@
   }
 }
 
-.flex{
-  display: flex;
-}
 
-.flex-end{
-  justify-content: end;
-}
-
-.m-b-20{
-  margin-bottom: 20px;
-}
-
-.m-b-10{
-  margin-bottom: 10px;
-}
-
-.pointer{
-  cursor: pointer;
-}
-
-.p-20{
-  padding:20px;
-}
-
-.p-10{
-  padding:10px;
-}
-
-#alert{
+#alert {
   position: absolute;
   top: 10px;
   width: fit-content;
 }
 
-.confirm_delete{
+.confirm_delete {
   position: absolute;
-    border: 1px solid #dee2e6;
-    z-index: 999;
-    width: max-content;
-    background: #fff;
-    border-radius: 5px;
+  border: 1px solid #dee2e6;
+  z-index: 999;
+  width: max-content;
+  background: #fff;
+  border-radius: 5px;
 }
 
-.confirm_delete_container{
+.confirm_delete_container {
   position: relative;
   color: #282c34;
 }
 
-body{
+body {
   width: 100%;
   height: 100%;
   background-image: url('../public/images/background.jpg');
   background-repeat: repeat;
-    background-size: contain;
+  background-size: contain;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.flex-end {
+  justify-content: end;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.bg-color-grey{
+  background-color: #f9f9f9;
+}
+
+.border-radius{
+  border-radius: 0.425rem;
+}
+
+.hover-grey:hover{
+  border-radius: 0.425rem;
+  background-color: #e7e3e3;
+}
+
+.item_block{
+  display: flex;
+  gap: 6px;
+}
+
+.aside_wrap{
+  height: 60%;
+  overflow-y: auto;
+  box-sizing: content-box;
+}
+
+.menu_container{
+  padding: 10px;
+}
+
+.space_between{
+  justify-content: space-between;
+}
+
+.ml-4{
+  margin-left: 4px;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.transition{
+  transition: all 0.2s ease-in;
+}
+
+.h-0{
+  height: 0;
+}
+
+.h-auto{
+  height: max-content;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }

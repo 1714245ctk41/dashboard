@@ -20,7 +20,6 @@ const Register = ({ setUser }) => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('this is submit handle', e.target);
     const { name, email, password } = formValue;
     if (name && email && password) {
       const token = 'abc';

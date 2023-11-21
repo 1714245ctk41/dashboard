@@ -13,14 +13,15 @@ const Loadable = (Component) => (props) => {
 
 // Authentication
 const Register = Loadable(lazy(() => import("../screens/Authori/Register")));
-const Dashboard = Loadable(lazy(() => import("../screens/Dashboard")));
+const Author = Loadable(lazy(() => import("../screens/Authori")));
 const Login = Loadable(lazy(() => import("../screens/Authori/Login")));
+const Dashboard = Loadable(lazy(() => import("../screens/Dashboard")));
 // Dashboard
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Dashboard />,
+    element: <Author />,
   },
   {
     path: "/register",
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   }
 ]);
 
